@@ -6,15 +6,16 @@ class App extends React.Component {
         super();
         this.state = {
             messages: [
-                "hi there how are you?",
+                "hello there how are you?",
                 'I am fine'
             ]
         };
     }
     render(){
-        let messageNodes = this.state.messages.map((message) => {
+        debugger;
+        var messageNodes = this.state.messages.map((message) => {
             return (
-                <div>{message}</div>
+                <div style={{color: 'green'}}>{message}</div>
             );
         });
 
